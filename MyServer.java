@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class MyServer {
 	public static void main(String[] args) {
 		try {
-			ServerSocket server = new ServerSocket(7777);
+			ServerSocket server = new ServerSocket(6789);// id host
 			System.out.println("Server da duoc tao");
 			Socket client = server.accept();
 			System.out.println("Client da ket noi den server");
@@ -25,7 +25,7 @@ public class MyServer {
 		        in[end] = temp;
 		        end--;
 		        begin++;
-		    }
+		    }// ham thuc thi dao nguoc chuoi 
 		    outToClient.println(in);
 			} catch (IOException e) {
 			// TODO Auto-generated catch block
