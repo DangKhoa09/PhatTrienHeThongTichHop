@@ -8,9 +8,9 @@ import java.util.Scanner;
 public class MyClient {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		try {
-			Socket client = new Socket("LocalHost", 7777);
+			Socket client = new Socket("LocalHost", 6789);
 			System.out.println("Client da duoc tao");
 			Scanner inFromServer = new Scanner(client.getInputStream());
 			PrintStream outToServer = new PrintStream(client.getOutputStream());
@@ -18,12 +18,12 @@ public class MyClient {
 			Scanner scan = new Scanner(System.in);
 			String a = scan.nextLine();
 			outToServer.println(a);
-			System.out.println("server: " + inFromServer.nextLine());
+			System.out.println("server: " + inFromServer.nextLine());//xuat chuoi ra man hinh va chuoi bi dao nguoc
 			} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 			} catch (IOException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 			}
 	}
