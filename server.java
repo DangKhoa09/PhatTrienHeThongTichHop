@@ -21,7 +21,7 @@ try {
 	outToClient.println("Xin chao, ban muon tim sach gi?");
 	String name = inFromClient.nextLine();
 	System.out.println("client: " + name);
-	BufferedReader br= new BufferedReader(new FileReader("‪‪E:\\doc.txt"));
+	BufferedReader br= new BufferedReader(new FileReader("‪‪E:\\doc.txt"));// file txt được tạo lưu trong bộ nhớ máy tính 
 	String tep=br.readLine();
 	if(tep.contains(name))
 		outToClient.println("Co sach " + name);
