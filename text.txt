@@ -1,0 +1,21 @@
+1 Book 
+2 Alt
+3 Fn
+4 Caps
+5 Lock
+6 Shift
+7 Num
+8 Home
+9 Insert
+10 Delete
+11 Enter
+12 Ctrl
+13 Esc
+14 Tab
+15 Backspace
+16 PgUp
+17 PgDn
+18 Left
+19 Right
+20 Under
+
