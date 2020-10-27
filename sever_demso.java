@@ -18,7 +18,7 @@ public static void main(String[] args) throws IOException{
 
     try {
 
-        serverSocket = new ServerSocket(9998);
+        serverSocket = new ServerSocket(9996);
 
         System.out.print("Server da đuoc tao" );
 
@@ -69,16 +69,14 @@ public static void main(String[] args) throws IOException{
                     case 8:inline="Tam";break;
 
                     case 9:inline="Chin";break;
+                    default:
+                    	inline="Khong phai la so nguyen";
 
                 }
 
                 dos.writeUTF(inline);
 
             }
-
-            else
-
-                dos.writeUTF("Khong phai la so trong day so");
 
         }
 
